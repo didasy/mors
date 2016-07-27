@@ -1,0 +1,26 @@
+{
+  "name": "mors",
+  "version": "0.0.1",
+  "description": "A simple module to help play a text as morse code.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "doc": "jsdoc app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JesusIslam/mors.git"
+  },
+  "keywords": [
+    "morse",
+    "mors",
+    "tone",
+    "helper"
+  ],
+  "author": "Andida Syahendar <omicron.b3ta@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JesusIslam/mors/issues"
+  },
+  "homepage": "https://github.com/JesusIslam/mors#readme"
+}
