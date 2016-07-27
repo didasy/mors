@@ -1,5 +1,5 @@
 {
-  "name": "mors",
+  "name": "node-mors",
   "version": "0.0.1",
   "description": "A simple module to help play a text as morse code.",
   "main": "app.js",
@@ -13,6 +13,7 @@
   },
   "keywords": [
     "morse",
+    "node-mors",
     "mors",
     "tone",
     "helper"
