@@ -1,6 +1,6 @@
 {
   "name": "node-mors",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple module to help play a text as morse code.",
   "main": "app.js",
   "scripts": {
