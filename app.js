@@ -1,16 +1,16 @@
 'use strict';
 
 /** @const {number} - Default length of bit tone in ms. */
-const bit                 = 250;
+const bit                 = 200;
 
 /** @const {number} - Default length of block tone in ms. */
-const block               = 500;
+const block               = 600;
 
 /** @const {number} - Default length of delay between tone in ms. */
-const delayBetweenTone    = 100;
+const delayBetweenTone    = 200;
 
 /** @const {number} - Default length of delay between letters in ms. */
-const delayBetweenLetter  = 250;
+const delayBetweenLetter  = 600;
 
 /** @const {Object} - Map of alphanumerics to morse. */
 const alphanumericsMap = {
@@ -49,7 +49,8 @@ const alphanumericsMap = {
   '6': [block, bit, bit, bit, bit],
   '7': [block, block, bit, bit, bit],
   '8': [block, block, block, bit, bit],
-  '9': [block, block, block, block, bit]
+  '9': [block, block, block, block, bit],
+  '.': [bit, block, bit, block, bit, block]
 }
 
 /**
@@ -77,7 +78,7 @@ function run(text, opts, cb) {
     .toLowerCase()
     .split('')
     .filter(function(el) { 
-      return /[a-z0-9]/.test(el); 
+      return /[a-z0-9\.]/.test(el); 
     })
     .map(function(el) {
       return alphanumericsMap[el].map(function(toneLen, i, arr) {
